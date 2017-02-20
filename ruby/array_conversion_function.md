@@ -1,5 +1,5 @@
 # Kernel#Array
-[Kernel#Array in ruby-doc](https://ruby-doc.org/core-2.4.0/Kernel.html#method-i-Array)
+[Kernel#Array in ruby-doc](https://ruby-doc.org/core-2.4.0/Kernel.html#method-i-Array)  
 One of the ruby capitalized built-in conversion functions. Takes an argument and tries hard to convert it to Array.
 
 ```ruby
