@@ -9,7 +9,7 @@ Array([4,2]) # => [4,2]
 Array(a: 'sheep', b: 'lamb') # => [[:a, 'sheep'], [:b, 'lamb']]
 ```
 
-May be useful when you need to be able to handle both singular values and collections (and accidental nil values)
+Useful when you need to handle both singular values and collections (and accidental nil values)
 
 ```ruby
 class Sheep
@@ -29,8 +29,9 @@ def herd(sheep)
     p "Sheep #{cutie.name} feels good!"
   end
 end
-
+# Singular value
 herd(lonely) # => "Sheep Indie feels good!"
+# Array of sheep
 herd([lonely, friend])
 #  => "Sheep Indie feels good!"
 #     "Sheep Extravert feels good!"
