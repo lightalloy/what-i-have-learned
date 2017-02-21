@@ -1,5 +1,5 @@
 # module_function
-(Module#module_function in ruby-doc)[http://ruby-doc.org/core-2.4.0/Module.html#method-i-module_function]
+[Module#module_function in ruby-doc](http://ruby-doc.org/core-2.4.0/Module.html#method-i-module_function)
 
 module_function has 2 effects:
 - makes the methods available as singleton methods on the module by copying them
@@ -60,7 +60,7 @@ ann.lie_on_the_sofa # => private method `lie_on_the_sofa' called for #<Woman:0x0
 ```
 
 Sorry, Ann, this method is now private.
-But no problem, I can lie on the sofa implicitly.
+But no problem, I can lie on the sofa implicitly:
 ```ruby
 class Woman
   include Adventurous
@@ -77,7 +77,7 @@ ann = Woman.new('Ann')
 ann.be_adventurous # => 'Mm, comfy'
 ```
 
-Module functions (singleton methods) are copies of the original methods. So they may be changed independently.
+Module functions (singleton methods) are copies of the original methods. So they may be changed independently:
 
 ```ruby
 # redefining method for classes with mixed module
@@ -92,7 +92,7 @@ ann.lie_on_the_sofa # => I bought a new sofa, so it's even more comfy
 Adventurous.lie_on_the_sofa # => Mm, comfy
 ```
 
-Module function can also be used with no arguments, this way all methods defined below it become module functions:
+module_function can be used with no arguments, this way all methods defined below it become module functions:
 ```ruby
 
 module Adventurous
