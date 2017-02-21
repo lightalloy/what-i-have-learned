@@ -109,3 +109,4 @@ end
 
 ```
 
+TODO: example usage in ruby standart libraries and possible usage in real life
