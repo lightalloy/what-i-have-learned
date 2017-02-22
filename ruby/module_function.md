@@ -1,6 +1,8 @@
 # module_function
 [Module#module_function in ruby-doc](http://ruby-doc.org/core-2.4.0/Module.html#method-i-module_function)
 
+TODO: example usage in ruby standart libraries and possible usage in real life
+
 module_function has 2 effects:
 - makes the methods available as singleton methods on the module by copying them
 - makes the instance-methods private
@@ -109,4 +111,3 @@ end
 
 ```
 
-TODO: example usage in ruby standart libraries and possible usage in real life
