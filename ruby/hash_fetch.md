@@ -34,4 +34,16 @@ valid_options = { human: 'Susan Strong', pet: nil }
 valid_options.fetch(:pet) # => nil
 ```
 
-# TODO: #fetch with block
+Fetch method is also implemented in Array and some third-party libraries.
+
+## #fetch with block
+
+You can supply a more informative message when the key is missing by passing a block:
+
+```ruby
+human = options.fetch(:human) do
+  raise KeyError, 'Human name must be specified'
+end
+```
+
+Block will be executed only if key is not found.
