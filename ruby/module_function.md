@@ -1,7 +1,7 @@
 # module_function
 [Module#module_function in ruby-doc](http://ruby-doc.org/core-2.4.0/Module.html#method-i-module_function)
 
-TODO: example usage in ruby standart libraries and possible usage in real life
+TODO: example usage in ruby standart libraries
 
 module_function has 2 effects:
 - makes the methods available as singleton methods on the module by copying them
@@ -111,3 +111,5 @@ end
 
 ```
 
+Module function is preferrable comparing to 'extend self' - https://github.com/bbatsov/ruby-style-guide#module-function
+Check [this part](https://github.com/bbatsov/ruby-style-guide#modules-vs-classes)  of ruby style guide too.
