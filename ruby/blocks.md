@@ -93,6 +93,7 @@ def humanize(name)
   human.description
 end
 
+# Same method can be called with different blocks:
 humanize('Anna') do |human|
   human.wear_hat('blue')
   human.interests = 'programming'
@@ -109,17 +110,6 @@ end
 # name: Anna
 # hat: none
 # interests: laziness
-```
-Same method can be called with different blocks:
-```ruby
-humanize('Anna') do |human|
-  human.interests = 'laziness'
-end
-# =>
-# name: Anna
-# hat: none
-# interests: laziness
-
 ```
 
 Reusing blocks:
