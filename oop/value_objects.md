@@ -26,8 +26,8 @@ Point = Struct.new(:x, :y)
 ```
 But structs are mutable. You can overcome it by using [gem 'values'](https://github.com/tcrayford/values).
 
-Links:
-https://martinfowler.com/bliki/ValueObject.html
-http://www.informit.com/articles/article.aspx?p=2220311&seqNum=11
-https://forum.upcase.com/t/value-objects/1996/2
-http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/
+Links:  
+https://martinfowler.com/bliki/ValueObject.html  
+http://www.informit.com/articles/article.aspx?p=2220311&seqNum=11  
+https://forum.upcase.com/t/value-objects/1996/2  
+http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/  
