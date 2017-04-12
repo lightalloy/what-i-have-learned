@@ -10,7 +10,6 @@ responsible for dealing with the persistence of our entities.
 
 ```ruby
 repo = TaskRepository.new
-
 task1 = repo.create(title: 'house cleaning', priority: 0)
 task2 = Task.new(title: 'homework', priority: 1)
 repo.create(task2)
