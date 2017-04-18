@@ -5,7 +5,7 @@ Hanami has separate class for each action.
 
 ## Exposure
 
-We don’t share every instance variable of the action with the view. 
+We don’t share every instance variable of the action with the view.
 When we want to do so, we must say so:
 
 ```ruby
@@ -31,7 +31,7 @@ module Web::Controllers::Tasks
     params do
       required(:title).filled
       required(:priority).filled
-    endm
+    end
   end
 end
 ```
