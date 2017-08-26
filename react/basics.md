@@ -1,6 +1,8 @@
-Component
+## Component
 
-Props: immutable.
+## Props
+Immutable
+
 '''
 render() {
   <Text>{this.props.text}</Text>
