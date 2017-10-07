@@ -32,7 +32,7 @@ class Human
   	@hat ||= "#{colour} hat"
   end
 
-  def description
+  def print_description
   	puts [:name, :hat, :interests].map { |key| "#{key}: #{public_send(key) || 'none'}" }.join("\n")
   end
 end
@@ -40,7 +40,7 @@ end
 def humanize(name, &block)
   human = Human.new(name)
   yield(human)
-  human.description
+  human.print_description
 end
 
 # calling the same method with different blocks: 
@@ -74,6 +74,9 @@ end
 do_fun_things('Daria') { |name| puts "Hi, #{name}" }
 
 # syntax with fun_block.call
+
+puts '----pass block as a parameter----'
+
 
 
 

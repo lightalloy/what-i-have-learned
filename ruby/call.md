@@ -18,15 +18,15 @@ puts 'robo.call'
 robo.call # => Robot Dance!
 
 puts 'robo.(2)'
-robo.(2) 
+robo.(2)
 # =>
-# Robot Dance! 
-# Robot Dance! 
+# Robot Dance!
+# Robot Dance!
 
 puts 'robo.()'
 robo.()
 # =>
-# Robot Dance! 
+# Robot Dance!
 
 ```
 

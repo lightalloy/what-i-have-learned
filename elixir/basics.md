@@ -1,0 +1,31 @@
+mix - create, compile projects, run 'tasks', manage dependencies
+
+mix new cards
+
+module - collection of methods and functions, no instance vars
+-------
+Elixir is transpiled into Erlang Code, executed on BEAM - Erlang Abstract Machine
+
+console:
+```bash
+iex -S mix
+# recompile - reload
+# ctrl+c - exit
+```
+
+We can have several methods with the same name, that accept different arguments.
+Elixir forces u to use the correct number of args.
+
+Enum(erables)
+
+List comprehensions - a mapping function; for every element we run a do block and what is returned from a block gets put to a new array.
+You can have multiple comprehensions:  
+```
+for suit <- suits, value <- values do
+  "#{value} of #{suit}"
+end
+```
+
+Tuple is like an array where the indexes have a special meaning.  
+
+Pattern matching - special way of variable assignment.

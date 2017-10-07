@@ -146,7 +146,7 @@ You can't pass more then one block:
 ```ruby
 def test_blocks(&block1, &block2)
    block1.call
-   block2.call 
+   block2.call
 end
 # => syntax error, unexpected ',', expecting ')'
 ```
