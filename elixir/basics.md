@@ -46,10 +46,27 @@ Cards.create_deck
 ```
 
 ```elixir
+# maps
 colors = %{ primary: "red" }
 # modify a Map
 colors = %{ colors | primary: "blue" }
 # add a property
 colors = Map.put(colors, :secondary_color, "green")
+```
 
+```elixir
+# keyword list
+colors = [primary: "red", secondary: "blue"]
+colors = [{:primary, "red"}, {:secondary, "green"}]
+
+# you can specify same keys
+[primary: "red", primary: "blue"]
+# e.g. for db access ()
+User.find_where({where: user.age > 20, where: user.subscribed == true})
+
+# you can also remove square braces - still 1 arg
+User.find_where(where: user.age > 20, where: user.subscribed == true)
+
+# still the same
+User.find_where where: user.age > 20, where: user.subscribed == true
 ```
