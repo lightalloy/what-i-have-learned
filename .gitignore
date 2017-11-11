@@ -2,5 +2,8 @@
 .vscode/
 current/*
 code/*test.rb
+code/test/
 *_test.md
-code/books
+code/books/
+code/dsl/
+articles/dsl/

@@ -1,8 +1,16 @@
 # Cheats:
 
+# create app
+```bash
+hanami new app_name --database=postgresql --template=haml --test=rspec
+```
+
 ## db migrate
+```bash
+be hanami db create
 be hanami db migrate
 HANAMI_ENV=test be hanami db migrate
+```
 
 ## console
 hanami console
@@ -32,3 +40,5 @@ or
 --
 workout2 = Workout.new(activity: 'swimming')
 repo.create(workout2)
+
+[Hanami Arch](https://gist.github.com/davydovanton/5c8fa016494463d2585e546a134661f6)
