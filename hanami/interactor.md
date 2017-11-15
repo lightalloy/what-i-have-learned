@@ -7,3 +7,5 @@ Returns data object with state (success/failed) and specified getters.
 - isolating business logic, easy callable
 - easy code sharing
 - easy control flow (e.g. redirect to url depending on the returned state)
+
+2 public methods: `initialize` and `call`.
