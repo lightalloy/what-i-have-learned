@@ -91,7 +91,7 @@ These objects are very easy to test.
 [4. Effective Ruby dependency injection at scale](https://www.icelab.com.au/notes/effective-ruby-dependency-injection-at-scale)
 
 But what if you need not 1 or 2, but 1 or 2 hundreds of dependencies.
-To make DI work at that scale we need Inversion of Controle container.
+To make DI work at that scale we need Inversion of Control container.
 
 We can use dry-container to make sure those dependencies are available when we need them.
 
@@ -339,7 +339,7 @@ puts repo.published.inspect
 puts repo[first_article.id].inspect
 ```
 
-https://www.icelab.com.au/notes/conversational-rom-rb-part-2-types-associations-and-update-commands
+## [Conversational rom-rb, part 2: types, associations, and update commands](https://www.icelab.com.au/notes/conversational-rom-rb-part-2-types-associations-and-update-commands)
 
 
 
