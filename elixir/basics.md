@@ -35,8 +35,32 @@ end
 Tuple is like an array where the indexes have a special meaning.
 
 Pattern matching - special way of variable assignment.
+```
+{a, b, c} = {:hello, "world", 42}
+[a, b, c] = [1, 2, 3]
+{y, ^x} = {2, 1}
+```
+```
+[color1] = ["red"]
+color1 # "red"
+```
 
 :ok, :error, :etc => atoms
+
+Case statements:
+```elixir
+case status do
+  :ok -> "do smth"
+  :error -> "do other"
+end
+
+case File.read(filename) do
+  {:ok, binary} -> "blah"
+  {:error, reason} -> "handle"
+end
+
+```
+
 
 Pipes:
 ```elixir

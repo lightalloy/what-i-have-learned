@@ -32,10 +32,13 @@ class Tomato < Food
 
   protected
 
-  def protected_for_tomatoes
-    'just for tomatoes'
+  def protected_price
+    10
   end
 
+  # def protected_for_tomatoes
+  #   'just for tomatoes'
+  # end
 end
 
 tomato = Tomato.new('red tomato')
@@ -46,7 +49,6 @@ p tomato.price_info
 p tomato.protected_price_info
 p tomato.private_price_info
 
-
 # You can call protected methods if the caller is_a? other_food.class
 class Cucumber < Food
   def compare_prices(other_food)
@@ -56,10 +58,21 @@ class Cucumber < Food
     # p other_food.protected_for_tomatoes # protected method `protected_for_tomatoes' called for #<Tomato:
     # p another_food.private_price # NoMethodError
   end
+
+  protected
+
+  def protected_price
+    4
+  end
 end
 
 cucumber = Cucumber.new('green guy')
+cucumber2 = Cucumber.new('small one')
+
 cucumber.compare_prices(tomato)
+# cucumber.compare_prices(cucumber2)
+
+exit
 
 class Car
   attr_reader :name

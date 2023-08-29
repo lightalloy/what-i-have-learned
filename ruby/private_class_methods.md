@@ -68,7 +68,7 @@ Usual private will not take effect:
 ```ruby
 class LightAlloy
   private
-  def play(video)
+  def self.play(video)
     puts video
   end
 end
